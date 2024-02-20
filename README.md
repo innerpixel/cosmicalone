@@ -1,2 +1,0 @@
-# cosmicalone
-cosmical one website 
