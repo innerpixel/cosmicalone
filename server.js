@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     );
   } else {
     const requestListener = function (req, res) {
-        fs.readFile(__dirname + "./index.html")
+        fs.readFile(__dirname + "./")
             .then(contents => {
                 res.setHeader("Content-Type", "text/html");
                 res.writeHead(200);
