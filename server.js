@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
       })
     );
   } else {
- 	res.end('Webserver is running');
+ 	res.end('Welcome to cosmical one. Please visit /overview or /api for more information.');
   }
 });
 
