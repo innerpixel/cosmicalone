@@ -13,19 +13,13 @@ const server = http.createServer((req, res) => {
       })
     );
   } else {
-    const requestListener = function (req, res) {
-        fs.readFile(__dirname + "/index.html")
-            .then(contents => {
-                res.setHeader("Content-Type", "text/html");
-                res.writeHead(200);
-                res.end(contents);
-            })
-            .catch(err => {
-                res.writeHead(500);
-                res.end(err);
-                return;
-            });
-    };
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(
+      JSON.stringify({
+        product_id: "default",
+        product_name: "response where no route - should send login page. else redirect o cosmical users space updated",
+      })
+    );
   }
 });
 
