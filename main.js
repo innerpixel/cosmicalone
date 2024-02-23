@@ -22,7 +22,10 @@ let peerConnection;
 const servers = {
     iceServers:[
         {
-            urls:['turn:185.247.117.93:3478?transport=tcp'], 
+            urls:[
+            'stun:185.247.117.93:3478?transport=tcp',
+            'stun:cosmical.one:3478?transport=udp'
+            ], 
 
         }
     ]
