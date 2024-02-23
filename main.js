@@ -24,7 +24,8 @@ const servers = {
         {
             urls:[
             'stun:185.247.117.93:3478?transport=tcp',
-            'stun:cosmical.one:3478?transport=udp'
+            'stun:cosmical.one:3478?transport=udp', 
+            'stun:stun1.l.google.com:19302'
             ], 
 
         }
