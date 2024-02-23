@@ -22,7 +22,7 @@ let peerConnection;
 const servers = {
     iceServers:[
         {
-            urls:['turn:185.247.117.93:3478?transport=udp'], 
+            urls:['turn:185.247.117.93:3478?transport=tcp'], 
 
         }
     ]
@@ -31,15 +31,10 @@ const servers = {
 
 let constraints = {
     video:{
-        
-        cursor: 'never',
-        displaySurface: 'application' ,
         width:{min:640, ideal:1920, max:1920},
-        height:{min:480, ideal:1080, max:1080}
-        // | 'browser' | 'monitor' | 'window'
-        
+        height:{min:480, ideal:1080, max:1080}      
     },
-    audio:false
+    audio:true
 }
 
 let init = async () => {
